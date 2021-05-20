@@ -1,2 +1,2 @@
-const firstWord = "Hello World";
+let firstWord = "Hello World";
 alert(firstWord);
