@@ -24,8 +24,8 @@ document.addEventListener("submit", function () {
     let lastName = document.getElementById("lastname").value;
     let firstName = document.getElementById("firstname").value;
     let city = document.getElementById("city").value;
-    alert('Nom : ' + lastName + '\n' +
-        'Prénom : ' + firstName + '\n' +
-        'Ville : ' + city + '\n');
+    alert("Nom : " + lastName + "\n" +
+        "Prénom : " + firstName + \n" +
+        "Ville : " + city + "\n");
 
 });
