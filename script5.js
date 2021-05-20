@@ -1,8 +1,22 @@
-document.addEventListener("submit", function () {
+/* document.addEventListener("submit", function () {
     let firstNumber = Math.trunc(document.getElementById('firstNumber').value);
-    let secondNumber = Math.trunc(document.getElementById('secondNumber').value);
+    let secondNumber = document.getElementById('secondNumber').value);
 
+alert(firstNumber * secondNumber);
 
-    alert(firstNumber * secondNumber);
+}); 
 
-});
+Manque la gestion des chiffre entiers*/
+
+/* if (Number.isInteger(firstNumber)) {
+    alert('Le premier chiffre doit obligatoirement être un choffre à virgule')
+} else {
+    alert('super !)')
+};
+ */
+
+if ((parseFloat(firstNumber) == parseInt(firstNumber)) && !isNaN(firstNumber)) {
+    alert("firstNumber est un entier");
+} else {
+    alert("firstNumber n'est pas un entier");
+};
