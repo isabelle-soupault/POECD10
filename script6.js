@@ -1,5 +1,4 @@
 
-
 submit.addEventListener("click", function () {
     let result = firstNumber.value % secondNumber.value
     let p = document.createElement("p")

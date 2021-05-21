@@ -4,7 +4,7 @@
 
 alert(firstNumber * secondNumber);
 
-}); 
+});
 
 Manque la gestion des chiffre entiers*/
 
@@ -15,8 +15,17 @@ Manque la gestion des chiffre entiers*/
 };
  */
 
-if ((parseFloat(firstNumber) == parseInt(firstNumber)) && !isNaN(firstNumber)) {
+/* if ((parseFloat(firstNumber) == parseInt(firstNumber)) && !isNaN(firstNumber)) {
     alert("firstNumber est un entier");
 } else {
     alert("firstNumber n'est pas un entier");
-};
+}; */
+
+document.addEventListener("submit", function () {
+    if (isNaN(firstNumber.value) == true) {
+        alert('Vous devez saisir un chiffre');
+    }
+    else {
+        alert('Vous avez un chiffre');
+    };
+});
