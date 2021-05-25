@@ -24,8 +24,36 @@ document.addEventListener("submit", function () {
     let lastName = document.getElementById("lastname").value;
     let firstName = document.getElementById("firstname").value;
     let city = document.getElementById("city").value;
-    alert("Nom : " + lastName + "\n" +
-        "Prénom : " + firstName + \n" +
-        "Ville : " + city + "\n");
-
+    /*     alert("Nom : " + lastName + "\n" +
+            "Prénom : " + firstName + \n" +
+            "Ville : " + city + "\n");
+     */
+    alert(`Nom : ${lastName} \n Prénom : ${firstName} \n Ville : ${city}`)
 });
+
+// ------------------------//
+//      CORRECTION        //
+//________________________//
+
+/*
+
+ 1 - Rajouter dans le HTML onclick="showserInfo()"
+ pour créer la fonction que l'on va appliquer dans le fichier JS
+
+ 2 - Créer la fonction
+ function showUserInfo(){
+    let lastName = document.getElementById("lastname").value;
+    let firstName = document.getElementById("firstname").value;
+    let city = document.getElementById("city").value;
+alert(`Nom : ${lastName} \n Prénom : ${firstName} \n Ville : ${city}`)
+
+les lignes 41 à 43 peuvent être réduites.
+let lastNameValue = lastname.value;
+let firstNameValue = firstname.value;
+let cityValue = city.value
+En effet, le navigateur charge de base de nombreuses informations
+
+on peut donc passer / skipper le document.getElementById("")
+ }
+
+*/
