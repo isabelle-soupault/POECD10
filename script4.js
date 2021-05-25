@@ -45,7 +45,11 @@ document.addEventListener("submit", function () {
     let lastName = document.getElementById("lastname").value;
     let firstName = document.getElementById("firstname").value;
     let city = document.getElementById("city").value;
-alert(`Nom : ${lastName} \n Prénom : ${firstName} \n Ville : ${city}`)
+alert(`Nom : ${lastName} \n Prénom : ${firstName} \n Ville : ${city}`);
+
+
+on peut donc passer / skipper le document.getElementById("")
+ }
 
 les lignes 41 à 43 peuvent être réduites.
 let lastNameValue = lastname.value;
@@ -53,7 +57,14 @@ let firstNameValue = firstname.value;
 let cityValue = city.value
 En effet, le navigateur charge de base de nombreuses informations
 
-on peut donc passer / skipper le document.getElementById("")
+Ce qui va donc donner in finé :
+ function showUserInfo(){
+let lastNameValue = lastname.value;
+let firstNameValue = firstname.value;
+let cityValue = city.value;
+
+alert(`Nom : ${lastName} \n Prénom : ${firstName} \n Ville : ${city}`);
+
  }
 
 */
