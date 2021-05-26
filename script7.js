@@ -1,5 +1,5 @@
 submit.addEventListener("click", function () {
-    if (isNaN(shoeSize.value) == true) {
+    if (isNaN(shoesSize.value) == true) {
         alert('Votre pointure doit est un nombre :)');
     }
     else if (isNaN(yearOfBirth.value) == true) {
@@ -9,3 +9,15 @@ submit.addEventListener("click", function () {
         alert(result);
     }
 });
+
+
+//________________________//
+//                        //
+//      CORRECTION        //
+//________________________//
+
+/*
+On pourrait également rajouter des vérifications,
+comme une plage de dates de naissance et une plage de pointures de chaussures
+
+*/
